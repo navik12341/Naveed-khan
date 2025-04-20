@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Zaheer Rehman Gym</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #111;
+      color: #fff;
+    }
+
+    header {
+      background: #000;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      color: #f44336;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #222;
+      padding: 10px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+    }
+
+    nav a:hover {
+      color: #f44336;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b') no-repeat center center/cover;
+      height: 90vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .service {
+      background: #222;
+      margin: 15px;
+      padding: 30px;
+      width: 250px;
+      border-radius: 10px;
+    }
+
+    .service h3 {
+      color: #f44336;
+    }
+
+    form {
+      max-width: 500px;
+      margin: auto;
+      background: #222;
+      padding: 30px;
+      border-radius: 10px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 5px;
+    }
+
+    input[type="submit"] {
+      background: #f44336;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    footer {
+      background: #000;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    }
+
+    .workout-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .day-card {
+      background: #222;
+      padding: 20px;
+      border-radius: 10px;
+      width: 280px;
+      text-align: center;
+    }
+
+    video {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Zaheer Rehman Gym</h1>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+    <a href="#workout">Workout</a>
+  </nav>
+
+  <div class="hero">
+    <h2>Train Hard, Stay Strong</h2>
+  </div>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>At PowerZone Gym, we provide world-class fitness facilities and expert training to help you achieve your fitness goals. Whether you’re a beginner or a pro, we’ve got the tools and support you need.</p>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="service">
+        <h3>Personal Training</h3>
+        <p>Work 1-on-1 with our certified trainers to create a custom fitness plan.</p>
+      </div>
+      <div class="service">
+        <h3>Group Classes</h3>
+        <p>Join our energetic group sessions including Zumba, Yoga, and HIIT.</p>
+      </div>
+      <div class="service">
+        <h3>Nutrition Plans</h3>
+        <p>Get expert advice and meal plans to support your fitness journey.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <input type="submit" value="Send Message">
+    </form>
+  </section>
+
+  <section id="workout">
+    <h2 style="text-align:center;">30-Day Workout Challenge</h2>
+    <div class="workout-grid">
+      <!-- Replace image with video per day -->
+      <div class="day-card">
+        <video autoplay muted loop>
+          <source src="C:\Users\PMLS\Downloads\3c7e051d990a69286738821ca00d21aa.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p>Day 1: Warm-up & Stretch</p>
+      </div>
+      <div class="day-card">
+        <video autoplay muted loop>
+          <source src="C:\Users\PMLS\Downloads\8e1652ed08ff03841d88a1ae8ff730e0.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p>Day 2: Cardio Burn</p>
+      </div>
+      <div class="day-card">
+        <video autoplay muted loop>
+          <source src="C:\Users\PMLS\Downloads\eb9bece6f8d3ad58375cfa9ba930f228.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p>Day 3: Core Strength</p>
+      </div>
+      <div class="day-card">
+        <video autoplay muted loop>
+          <source src="C:\Users\PMLS\Desktop\1528fa813f4dd427a615791821034086_720w.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p>Day 4: Full Body HIIT</p>
+      </div>
+      <div class="day-card">
+        <video autoplay muted loop>
+          <source src="C:\Users\PMLS\Downloads\cb4d14f2ec309a3d1af3f4c559b1c104.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p>Day 5: Leg Day</p>
+      </div>
+      <div class="day-card">
+        <video autoplay muted loop>
+          <source src="C:\Users\PMLS\Downloads\c473f525a626d28b63555cab934b64b1.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p>Day 6: Upper Body</p>
+      </div>
+      <!-- Continue with Day 7 to Day 30 in same format -->
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 PowerZone Gym. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
